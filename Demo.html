@@ -36,3 +36,98 @@
 
 </script>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turtle - Cirkel</title>
+  <script src="turtle.js"></script>
+</head>
+<body>
+  <canvas id="turtlecanvas" width="600" height="600"></canvas>
+
+  <script>
+    let t = new Turtle("turtlecanvas");
+
+    
+    for (let i = 0; i < 360; i++) {
+      t.forward(2);  
+      t.right(1);    
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turtle A - Vierkant</title>
+  <script src="turtle.js"></script>
+</head>
+<body>
+  <canvas id="turtlecanvas" width="600" height="600"></canvas>
+
+  <script>
+    let t = new Turtle("turtlecanvas");
+    for (let i = 0; i < 4; i++) {
+      t.forward(100);
+      t.right(90);
+    }
+
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turtle B - Cirkel</title>
+  <script src="turtle.js"></script>
+</head>
+<body>
+  <canvas id="turtlecanvas" width="600" height="600"></canvas>
+
+  <script>
+    let t = new Turtle("turtlecanvas");
+
+    
+    for (let i = 0; i < 360; i++) {
+      t.forward(2);
+      t.right(1);
+    }
+
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turtle C - Bloem</title>
+  <script src="turtle.js"></script>
+</head>
+<body>
+  <canvas id="turtlecanvas" width="600" height="600"></canvas>
+
+  <script>
+    let t = new Turtle("turtlecanvas");
+
+    function halveCirkel(radius) {
+      
+      for (let i = 0; i < 180; i++) {
+        t.forward((Math.PI * radius) / 180);
+        t.right(1);
+      }
+    }
+
+    // Bloem tekenen
+    for (let i = 0; i < 6; i++) 
+      halveCirkel(50);
+      t.right(120);  
+      halveCirkel(50);
+      t.right(60);   
+    }
+
+  </script>
+</body>
+</html>
+
+
+
